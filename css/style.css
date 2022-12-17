@@ -22,6 +22,14 @@ body {
     height: auto;
 }
 
+.home_color{
+    color: #924EBF;
+}
+
+.home_bgcolor{
+    background-color: #924EBF;
+}
+
 .listNoDecoration{
     list-style-type: none;
 }
@@ -81,4 +89,19 @@ footer{
 #welcome {
     width: 100%;
     height: auto;
+}
+
+.nav-link {
+    
+    color: #924EBF;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: #60337e;
+}
+
+
+.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: #924EBF;
 }

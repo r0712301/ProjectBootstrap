@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    margin: 100px;
+    padding: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+#mail{
+    text-decoration: underline;
+}
+#FH5{
+    width: 100px;
+    height: auto;
+}
+
+#dd{
+    width: 200px;
+    height: auto;
+}
+
+.listNoDecoration{
+    list-style-type: none;
+}
+
+#HS{
+    width: 200px;
+    height: auto;
+}
+#bgc{
+    background-color: lightgray;
+    padding: 15px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #924EBF;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+h1, h2, h3 {
+    margin: 10px;
+    padding: 10px;
+    margin-left: 0;
+    padding-left: 0;
+}
+li ul li{
+    list-style-type: none;
+}
+
+footer{
+    background-color: #924EBF;
+    color: #fff;
+    margin-top: 0;
+    padding: 5px;
+}
+
+#welcome {
+    width: 100%;
+    height: auto;
+}

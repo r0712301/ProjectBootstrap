@@ -6,6 +6,7 @@ body {
     margin-top: 0px;
     padding-top: 0px; */
     font-family: 'Inter', sans-serif;
+    padding-top: 56px;
     
 }
 
@@ -75,15 +76,29 @@ h1, h2, h3 {
     margin-left: 0;
     padding-left: 0;
 }
+
+/* .container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+} */
+
+.carousel .carousel-item {
+    max-height: 350px;
+}
+
+.img{
+    height: auto;
+    width: 50px;
+}
+
 li ul li{
     list-style-type: none;
 }
 
-footer{
+.footer{
     background-color: #924EBF;
-    color: #fff;
-    margin-top: 0;
-    padding: 5px;
+
 }
 
 #welcome {
@@ -97,7 +112,8 @@ footer{
 }
 
 .nav-link:hover, .nav-link:focus{
-    color: #60337e;
+    color: #fff;
+    background-color: #60337e;
 }
 
 

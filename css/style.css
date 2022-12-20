@@ -17,6 +17,12 @@ body {
 main{
     padding-bottom: 115px;
 }
+@media screen and (max-width: 768px) {
+    main{
+        padding-bottom: 155px;
+    }
+    
+}
 
 #mail{
     text-decoration: underline;
@@ -110,8 +116,17 @@ footer{
 
 }
 
-.align-right{
+@media only screen and (min-width: 768px) {
+    .align-right {
     text-align: right;
+}
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        text-align: center;
+    }
+    
 }
 
 #welcome {

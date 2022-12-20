@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" class="h-100">
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,7 @@
   <title>Homepagina</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="/images/favicon.jpg" class="img" alt=""></a>
@@ -105,44 +105,55 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  
-<div class="container">
-  <div class="row">
-    <div class="card col-md-6 col-lg-4 mx-auto my-4" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
 
-    <div class="card col-md-6 col-lg-4 mx-auto my-4" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card col-md-6 col-lg-4 mx-auto my-4" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Welkom</h1>
+        <h2>Voor we beginnen</h2>
+        <p>Welkom op mijn portfolio, mijn naam is Yannick van Eck en ik studeer Graduaat Programmeren (2 jarige
+          opleiding) aan de Thomas More Geel</p>
+        <p>Op deze website zal ik al mijn prestaties plaatsen rond webdesign, zowel statisch als interactief</p>
       </div>
     </div>
   </div>
-</div>
 
   <div class="container">
-    <h1>Welkom</h1>
-    <h2>Voor we beginnen</h2>
-    <p>Welkom op mijn portfolio, mijn naam is Yannick van Eck en ik studeer Graduaat Programmeren (2 jarige
-      opleiding) aan de Thomas More Geel</p>
-    <p>Op deze website zal ik al mijn prestaties plaatsen rond webdesign, zowel statisch als interactief</p>
+    <div class="row">
+      <div class="card col-md-6 col-lg-4 mx-auto my-4" style="width: 18rem;">
+        <img src="/images/Forza_logo_2020.svg" class="card-img-top" alt="D&D logo">
+        <div class="card-body">
+          <h5 class="card-title">Mijn Hobby's</h5>
+          <p class="card-text">Op deze pagina geef ik u meer informatie over mijn hobby's.</p>
+          <a href="hobby.html" class="btn btn-primary">Hobby's</a>
+        </div>
+      </div>
+
+      <div class="card col-md-6 col-lg-4 mx-auto my-4" style="width: 18rem;">
+        <div class="card-header">
+          <img src="/images/CV_foto.jpg" class="card-img-top" alt="Voorbeeld foto werk">
+        </div>
+        
+        <div class="card-body">
+          <h5 class="card-title">Mijn CV</h5>
+          <p class="card-text">Op deze pagina laat ik u zien wat ik allemaal al geleerd heb en waar mijn vaardigheden liggen.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card col-md-6 col-lg-4 mx-auto my-4" style="width: 18rem;">
+        <img src="/images/Contact.jpg" class="card-img-top" alt="Voorbeeld foto contact">
+        <div class="card-body">
+          <h5 class="card-title">Contact</h5>
+          <p class="card-text">Via dit kaartje kunt u eventueel contact met me opnemen.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
     <p>Ook zal ik verdere informatie geven over mezelf en kunt u ook mijn CV downloaden</p>
     <h2>Over mij</h2>
     <p>Ik ben een kalm en spraakzaam persoon, maar ben niet goed met grote groepen.</p>
@@ -159,9 +170,17 @@
 
 
   <!-- Begin page content -->
-  <footer class="footer mt-auto fixed-bottom py-3 bg-light">
+  <footer class="footer mt-auto py-3">
     <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <div class="row">
+        <div class="col-6">
+          <p><a href="https://www.linkedin.com/in/yannick-van-eck-1864aa251/" target="_blank"><i
+                class="fa fa-linkedin-square" style="font-size:24px"></i></a> Mijn LinkedIn profiel</p>
+        </div>
+        <div class="col-6 align-right">
+          <p id="mail">r0712301@student.thomasmore.be</p>
+        </div>
+      </div>
     </div>
   </footer>
 

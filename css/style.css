@@ -135,8 +135,8 @@ footer{
 }
 
 .nav-link {
-    
-    color: #924EBF;
+    color: #fff;
+    background-color: #924EBF;
 }
 
 .navbar-collapse .nav-link.active{

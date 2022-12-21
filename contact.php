@@ -25,14 +25,47 @@ $message = htmlspecialchars($_POST['content']);
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Output Contact</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-mine">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="/images/favicon_cropped.jpg" class="img" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CV.html">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ervaring.html">Ervaring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hobby.html">Hobby's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  
 <p>Aangezien mijn mailing nog niet werkt, print ik hier uw informatie terug.</p>
 <p><?php echo $mailto?></p>
 <!-- echo "<p>", $mailto, "</p>"; -->
@@ -41,5 +74,21 @@ $message = htmlspecialchars($_POST['content']);
 <!-- echo "<p>", $message, "</p>"; -->
 <p><?php echo $message?></p>
 <a href="contact.html" data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
+
+<footer class="footer mt-auto fixed-bottom py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="https://www.linkedin.com/in/yannick-van-eck-1864aa251/" target="_blank"><i
+                class="fa fa-linkedin-square" style="font-size:24px"></i></a> Mijn LinkedIn profiel</p>
+          <p>&copy; Yannick van Eck</p>
+        </div>
+        <div class="col-md-6 align-right">
+          <p id="mail">r0712301@student.thomasmore.be</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

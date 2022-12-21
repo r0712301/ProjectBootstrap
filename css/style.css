@@ -126,6 +126,10 @@ footer{
     footer{
         text-align: center;
     }
+
+    footer.fixed-bottom{
+        position: static !important;
+    }
     
 }
 

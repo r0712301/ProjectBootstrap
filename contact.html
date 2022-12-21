@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Contact</title>
 </head>
 
 <body class="d-flex flex-column">
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-mine">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="/images/favicon_cropped.jpg" class="img" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="CV.html">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ervaring.html">Ervaring</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hobby.html">Hobby's</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                    </li>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-mine">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="/images/favicon_cropped.jpg" class="img" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CV.html">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ervaring.html">Ervaring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hobby.html">Hobby's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
 
-                </ul>
+        </ul>
 
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container my-2 py-2">
+      <div class="row">
+        <div class="col-md-6 offset-2">
+          <form method="post" action="contact.php">
+            <input type="email" id="to" name="to" value="r0712301@student.thomasmore.be" hidden>
+            <div class="mb-3">
+              <label type="email" id="email" name="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" placeholder="example@email.com" id="email" name="email" required aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
             </div>
+            <div class="mb-3">
+              <label  for="subject" class="form-label">Onderwerp:</label>
+              <input type="text"type="text" id="subject" name="subject" placeholder="Onderwerp" required class="form-control">
+            </div>
+            <div class="mb-3">
+              <label  for="content" class="form-label">Inhoud:</label>
+              <textarea type="text"type="text" id="content" name="content" placeholder="Inhoud" cols="30" rows="9" class="form-control"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Versturen</button>
+          </form>
         </div>
-    </nav>
+      </div>
+    </div>
 
+  </main>
 
-
-    <footer class="footer mt-auto fixed-bottom py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p><a href="https://www.linkedin.com/in/yannick-van-eck-1864aa251/" target="_blank"><i
-                    class="fa fa-linkedin-square" style="font-size:24px"></i></a> Mijn LinkedIn profiel</p>
-              <p>&copy; Yannick van Eck</p>
-            </div>
-            <div class="col-md-6 align-right">
-              <p id="mail">r0712301@student.thomasmore.be</p>
-            </div>
-          </div>
+  <footer class="footer mt-auto fixed-bottom py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p><a href="https://www.linkedin.com/in/yannick-van-eck-1864aa251/" target="_blank"><i
+                class="fa fa-linkedin-square" style="font-size:24px"></i></a> Mijn LinkedIn profiel</p>
+          <p>&copy; Yannick van Eck</p>
         </div>
-      </footer>
-    
+        <div class="col-md-6 align-right">
+          <p id="mail">r0712301@student.thomasmore.be</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

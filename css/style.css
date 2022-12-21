@@ -6,7 +6,7 @@ body {
     margin-top: 0px;
     padding-top: 0px; */
     font-family: 'Inter', sans-serif;
-    padding-top: 75px;
+    padding-top: 66px;
     
 }
 
@@ -98,7 +98,7 @@ h1, h2, h3 {
 } */
 
 .carousel .carousel-item {
-    max-height: 350px;
+    max-height: 400px;
 }
 
 .img{

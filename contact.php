@@ -37,7 +37,7 @@ $message = htmlspecialchars($_POST['content']);
 <body>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-mine">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="/images/favicon_cropped.jpg" class="img" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img src="/images/favicon_cropped.jpg" class="img" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@ $message = htmlspecialchars($_POST['content']);
             <a class="nav-link" href="hobby.html">Hobby's</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
           </li>
 
         </ul>
@@ -65,7 +65,7 @@ $message = htmlspecialchars($_POST['content']);
       </div>
     </div>
   </nav>
-  
+
 <p>Aangezien mijn mailing nog niet werkt, print ik hier uw informatie terug.</p>
 <p><?php echo $mailto?></p>
 <!-- echo "<p>", $mailto, "</p>"; -->
@@ -73,7 +73,7 @@ $message = htmlspecialchars($_POST['content']);
 <p><?php echo $subject?></p>
 <!-- echo "<p>", $message, "</p>"; -->
 <p><?php echo $message?></p>
-<a href="contact.html" data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
+<a href="contact.html" data-toggle="tooltip" data-placement="top" title="Contact" class="btn btn-primary">Contact</a>
 
 <footer class="footer mt-auto fixed-bottom py-3">
     <div class="container">

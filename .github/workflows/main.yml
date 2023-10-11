@@ -1,4 +1,5 @@
-on: push
+
+on: workflow_dispatch
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -13,4 +14,6 @@ jobs:
       with:
         server: ftp.yannickvaneckbe.webhosting.be
         username: pulpfiction@yannickvaneckbe
-        password: ${{ FTP_PASSWORD_PULPFICTION }}
+        password: ${{ secrets.FTP_PASSWORD_PULPFICTION }}
+        dry-run: true
+        server-dir: ./www/
